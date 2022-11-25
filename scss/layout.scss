@@ -1,0 +1,106 @@
+@import "vars";
+@import "mixins";
+// @붙이면 가져올수 있다. (import할때는 제목의 언더바를 붙이지 않는다)
+
+body {
+  font-family: "Roboto", "Noto Sans KR", "돋움";
+  color: #111;
+  font-size: 18px;
+  overflow-x: hidden;
+  // min-height: 3000px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//이미지는 글자처럼 처리된다.
+img {
+  vertical-align: top;
+  //이걸쓰면 이미지 위로 붙여 준다. 안쓰면 이미가 살짝 벌어짐
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  &.on {
+    color: #111;
+    .blacklogo {
+      display: block;
+    }
+    .colorlogo {
+      display: none;
+    }
+  }
+  .blacklogo {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+      font-size: 20px;
+      font-weight: 700;
+      ul {
+        display: flex;
+        align-items: center;
+        li:nth-child(2) {
+          margin-left: 20px;
+          i {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: #111;
+  .container {
+    color: #fff;
+    opacity: 0.5;
+    width: 80vw;
+    display: flex;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    .img-box {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 30px;
+      border-right: 2px solid #fff;
+    }
+    .address {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 30px;
+      font-size: 16px;
+      line-height: 1.5;
+      .copyright {
+        display: block;
+        padding-top: 100px;
+        font-style: italic;
+      }
+    }
+  }
+}
