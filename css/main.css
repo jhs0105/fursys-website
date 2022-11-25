@@ -81,7 +81,7 @@
 }
 .case-study .container {
   display: flex;
-  width: 80vw;
+  width: 1250px;
 }
 .case-study .case-box {
   width: 40%;
@@ -275,15 +275,22 @@
 }
 .guide .container .guide-box .guide-txt {
   width: 40%;
+  box-sizing: border-box;
+  margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.guide .container .guide-box .guide-txt form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
 .guide .container .guide-box .guide-txt .txt-input {
   display: flex;
   align-items: center;
-  width: 400px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   border-bottom: 2px solid #333;
@@ -327,33 +334,31 @@
 .guide .container .guide-box .guide-txt .community {
   margin-top: 50px;
   border-top: 2px solid #111;
-  width: 80%;
+  width: 100%;
   box-sizing: border-box;
   padding: 30px 20px;
   display: flex;
   align-items: center;
-  font-size: 17px;
+  justify-content: space-between;
+  font-size: 16px;
   font-weight: 700;
 }
 .guide .container .guide-box .guide-txt .community:hover {
   background-color: #111;
   color: #fff;
 }
-.guide .container .guide-box .guide-txt .community:hover span:before {
+.guide .container .guide-box .guide-txt .community:hover .line {
   background-color: #fff;
+}
+.guide .container .guide-box .guide-txt .community .line {
+  width: 80px;
+  height: 2px;
+  background-color: #000;
 }
 .guide .container .guide-box .guide-txt .community span {
   display: flex;
   align-items: center;
-  font-size: 16px;
-}
-.guide .container .guide-box .guide-txt .community span:before {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background-color: #111;
-  display: inline-block;
-  margin: 0 20px;
+  font-size: 14px;
 }
 .guide .container .guide-box .swiper-box {
   width: 60%;
@@ -363,14 +368,44 @@
   overflow: hidden;
   margin-bottom: 50px;
 }
+.guide .container .guide-box .swiper-box .guide-img ul li {
+  width: 100%;
+}
 .guide .container .guide-box .swiper-box .guide-img ul li img {
+  width: 100%;
   border: 2px solid #333;
+  box-sizing: border-box;
 }
 .guide .container .guide-box .swiper-box .pagination {
   position: absolute;
   z-index: 2;
-  left: 452px;
+  left: 50%;
 }
 .guide .container .guide-box .swiper-box .pagination .swiper-pagination-bullet-active {
   background-color: #111;
+}
+
+.floating-menu {
+  position: fixed;
+  z-index: 10;
+  bottom: 100px;
+  right: 50px;
+  background-color: #111;
+  color: #fff;
+  width: 250px;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  border: 2px solid #111;
+  transition: all 0.25s ease;
+}
+.floating-menu:hover {
+  background-color: #fff;
+  color: #111;
 }

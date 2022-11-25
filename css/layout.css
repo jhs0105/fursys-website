@@ -24,7 +24,7 @@ button {
 }
 
 .container {
-  width: 90vw;
+  width: 1420px;
   margin: 0 auto;
 }
 
@@ -57,15 +57,75 @@ button {
   font-size: 20px;
   font-weight: 700;
 }
-#header .container nav ul {
+#header .container nav > ul {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#header .container nav > ul li:nth-child(2) {
+  margin-left: 20px;
+}
+#header .container nav > ul li:nth-child(2) i {
+  font-size: 25px;
+}
+#header .container nav .list {
+  width: 500px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+#header .container nav .list.menu-on {
+  right: 0;
+}
+#header .container nav .list button {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+#header .container nav .list button i {
+  margin-left: 10px;
+}
+#header .container nav .list ul li {
   display: flex;
   align-items: center;
 }
-#header .container nav ul li:nth-child(2) {
-  margin-left: 20px;
+#header .container nav .list ul li:hover:after {
+  content: "\f061";
+  font-family: "FontAwesome";
+  display: block;
+  margin-left: 10px;
+  transition: all 0.25s ease;
 }
-#header .container nav ul li:nth-child(2) i {
-  font-size: 25px;
+#header .container nav .list ul li a {
+  font-size: 30px;
+  font-weight: 700;
+  display: block;
+  padding: 15px 0;
+}
+#header .container nav .list ul li span {
+  font-size: 16px;
+  vertical-align: super;
+}
+#header .container nav .list ul li span.sub-title01 {
+  color: #9aafde;
+}
+#header .container nav .list ul li span.sub-title02 {
+  color: #00a75d;
+}
+#header .container nav .list ul li span.sub-title03 {
+  color: #eb6d65;
 }
 
 #footer {
