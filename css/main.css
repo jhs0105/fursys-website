@@ -141,25 +141,18 @@
   justify-content: space-between;
   position: relative;
 }
-.case-study .photo-box.up .photo1:after,
-.case-study .photo-box.up .photo2:after,
-.case-study .photo-box.up .photo3:after {
-  top: -100%;
-  transition: all 0.25s ease;
-}
 .case-study .photo-box .photo1 {
   margin-top: 100px;
   position: relative;
   overflow: hidden;
 }
-.case-study .photo-box .photo1:after {
-  content: "";
+.case-study .photo-box .photo1 .img-box {
   width: 100%;
   height: 410px;
   background-color: #2757a4;
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
 }
 .case-study .photo-box .photo2 {
   position: relative;
@@ -167,14 +160,13 @@
   margin-left: -300px;
   overflow: hidden;
 }
-.case-study .photo-box .photo2:after {
-  content: "";
+.case-study .photo-box .photo2 .img-box {
   width: 100%;
   height: 309px;
   background-color: #2757a4;
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
 }
 .case-study .photo-box .photo3 {
   position: relative;
@@ -183,14 +175,13 @@
   z-index: 2;
   overflow: hidden;
 }
-.case-study .photo-box .photo3:after {
-  content: "";
+.case-study .photo-box .photo3 .img-box {
   width: 100%;
   height: 511px;
   background-color: #2757a4;
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
 }
 
 .study02 {
@@ -209,7 +200,7 @@
   padding-top: 0;
   margin-top: -200px;
 }
-.study02 .container .photo-box .photo1:after {
+.study02 .container .photo-box .photo1 .img-box {
   background-color: #00a75d;
   height: 511px;
 }
@@ -217,7 +208,7 @@
   z-index: -1;
   top: 350px;
 }
-.study02 .container .photo-box .photo2:after {
+.study02 .container .photo-box .photo2 .img-box {
   background-color: #00a75d;
   height: 530px;
 }
@@ -238,7 +229,7 @@
   padding-top: 0;
   margin-top: 300px;
 }
-.study03 .container .photo-box .photo1:after {
+.study03 .container .photo-box .photo1 .img-box {
   background-color: #eb6d65;
   height: 363px;
 }
@@ -246,7 +237,7 @@
   z-index: -1;
   margin-top: -300px;
 }
-.study03 .container .photo-box .photo2:after {
+.study03 .container .photo-box .photo2 .img-box {
   background-color: #eb6d65;
   height: 493px;
 }

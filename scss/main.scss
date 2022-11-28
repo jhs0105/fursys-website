@@ -138,28 +138,27 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    &.up {
-      .photo1,
-      .photo2,
-      .photo3 {
-        &:after {
-          top: -100%;
-          transition: all 0.25s ease;
-        }
-      }
-    }
+    // &.up {
+    //   .photo1,
+    //   .photo2,
+    //   .photo3 {
+    //     &:after {
+    //       top: -100%;
+    //       transition: all 0.25s ease;
+    //     }
+    //   }
+    // }
     .photo1 {
       margin-top: 100px;
       position: relative;
       overflow: hidden;
-      &:after {
-        content: "";
+      .img-box {
         width: 100%;
         height: 410px;
         background-color: $main-color;
         position: absolute;
         left: 0;
-        top: 0;
+        bottom: 0;
       }
     }
     .photo2 {
@@ -167,14 +166,13 @@
       margin-top: -500px;
       margin-left: -300px;
       overflow: hidden;
-      &:after {
-        content: "";
+      .img-box {
         width: 100%;
         height: 309px;
         background-color: $main-color;
         position: absolute;
         left: 0;
-        top: 0;
+        bottom: 0;
       }
     }
     .photo3 {
@@ -183,14 +181,13 @@
       margin-top: 200px;
       z-index: 2;
       overflow: hidden;
-      &:after {
-        content: "";
+      .img-box {
         width: 100%;
         height: 511px;
         background-color: $main-color;
         position: absolute;
         left: 0;
-        top: 0;
+        bottom: 0;
       }
     }
   }
@@ -218,7 +215,7 @@
       .photo1 {
         padding-top: 0;
         margin-top: -200px;
-        &:after {
+        .img-box {
           background-color: $main-color02;
           height: 511px;
         }
@@ -226,7 +223,7 @@
       .photo2 {
         z-index: -1;
         top: 350px;
-        &:after {
+        .img-box {
           background-color: $main-color02;
           height: 530px;
         }
@@ -257,7 +254,7 @@
       .photo1 {
         padding-top: 0;
         margin-top: 300px;
-        &:after {
+        .img-box {
           background-color: $main-color03;
           height: 363px;
         }
@@ -265,7 +262,7 @@
       .photo2 {
         z-index: -1;
         margin-top: -300px;
-        &:after {
+        .img-box {
           background-color: $main-color03;
           height: 493px;
         }
